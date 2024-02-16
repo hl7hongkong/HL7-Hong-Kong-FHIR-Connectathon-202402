@@ -1,0 +1,275 @@
+{
+	"resourceType": "Bundle",
+	"id": "c757873d-ec9a-4326-a141-556f43239520",
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+	},
+	"type": "document",
+	"timestamp": "2022-12-01T15:04:48.865+08:00",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:722a41f9-e392-425d-b912-aab77d988e15",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "722a41f9-e392-425d-b912-aab77d988e15",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Composition Resource</div>"
+				},							
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "http://ehealth.gov.hk/fhir",
+							"display": "Hong Kong eHR Healthcare Documen"
+						}
+					],
+					"text": "Hong Kong eHR Healthcare Document"
+				},
+				"subject": {
+					"reference": "Patient/6e480262-978c-49f0-a793-468293932fc2"
+				},
+				"date": "2022-12-01T15:04:48.865+08:00",
+				"author": [
+					{
+						"reference": "Organization/author",
+						"display": "FAMILIES CLINICS"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Allergy Records",
+						"code": {
+							"coding": [
+								{
+									"system": "http://ehealth.gov.hk/FHIR/datadomain",
+									"code": "AL1",
+									"display": "Allergy Records"
+								}
+							]
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+										"valueDateTime": "2021-01-25T08:30:00+11:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+										"valueString": "9938744799"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+										"valueString": "FAMILIES CLINICS"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+										"valueDateTime": "2021-01-25T08:30:00+11:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIdentifier",
+										"valueString": "9938744799"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+										"valueString": "FAMILIES CLINICS"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-TransactionType",
+										"valueString": "I"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2021-01-25T08:30:00+11:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2021-01-25T08:30:00+11:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+										"valueString": "3"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-UploadMode",
+										"valueString": "BL"
+									}
+								],
+								"reference": "AllergyIntolerances/947a8c5c-3ef2-46ba-b819-e2c6d936d75e",
+								"identifier": {
+									"system": "http://ehealth.gov.hk/HCP/Recordkey",
+									"value": "8a02845a7732e45901773701c51d1ec3"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:6e480262-978c-49f0-a793-468293932fc2",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "6e480262-978c-49f0-a793-468293932fc2",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Resource</div>"
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "944272043043"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "YD1298051"
+					}
+				],
+				"name": [
+					{
+						"text": "CHAN, TAI MAN",
+						"family": "CHAN",
+						"given": [
+							"TAI MAN"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "2000-08-04"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+			"resource": {
+				"resourceType": "Encounter",
+				"id": "169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter Resource</div>"
+				},
+				"extension": [
+					{
+						"url": "http://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+						"valueString": "9938744799"
+					}
+				],
+				"identifier": [
+					{
+						"system": "http://ehealth.gov.hk/HCPID/EpisodeNum",
+						"value": "OP123456"
+					}
+				],
+				"status": "finished",
+				"class": {
+					"system": "http://ehealth.gov.hk/FHIR/class",
+					"code": "UNKNOWN",
+					"display": "Unknown status"
+				}
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:947a8c5c-3ef2-46ba-b819-e2c6d936d75e",
+			"resource": {
+				"resourceType": "AllergyIntolerance",
+				"id": "947a8c5c-3ef2-46ba-b819-e2c6d936d75e",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">AllergyIntolerance Resource</div>"
+				},				
+				"extension": [
+					{
+						"url": "http://ehealth.gov.hk/FHIR/1003138-Typeofallergencode",
+						"valueString": "Drug"
+					},
+					{
+						"url": "http://ehealth.gov.hk/FHIR/1003139-TypeofAllergenDesc",
+						"valueString": "Drug allergen"
+					},
+					{
+						"url": "http://ehealth.gov.hk/FHIR/1003140-TypeofAllergenLocalDesc",
+						"valueString": "Drug allergy"
+					},
+					{
+						"url": "http://ehealth.gov.hk/FHIR/1003145-DeleteAllergyReason",
+						"valueString": "Typo"
+					}
+				],
+				"clinicalStatus": {
+					"coding": [
+						{							
+							"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+							"code": "active",
+							"display": "Active"							
+						}
+					]
+				},
+				"verificationStatus": {
+					"coding": [
+						{
+							"system": "http://eHealth.gov.hk/FHIR/LevelofCertainty",
+							"code": "C",
+							"display": "Certain"
+						}
+					],
+					"text": "Certain"
+				},
+				"type": "allergy",
+				"code": {
+					"coding": [
+						{
+							"system": "http://ehealth.gov.hk/HKCTT",
+							"code": "6000704",
+							"display": "Aldomet (methyldopa)"
+						},
+						{
+							"system": "http://ehealth.gov.hk/local/allergenCode",
+							"code": "19498",
+							"display": "Aldomet (methyldopa)"
+						}
+					]
+				},
+				"patient": {
+					"reference": "Patient/6e480262-978c-49f0-a793-468293932fc2"
+				},
+				"reaction": [
+					{
+						"manifestation": [
+							{
+								"coding": [
+									{
+										"system": "http://ehealth.gov.hk/FHIR/AllergyReaction",
+										"code": "21",
+										"display": "Rash"
+									}
+								],
+								"text": "Rash"
+							}
+						],
+						"note": [
+							{
+								"text": "This is a remark."
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,286 @@
+{
+	"resourceType": "Bundle",
+	"id": "c757873d-ec9a-4326-a141-556f43239520",
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:c757873d-ec9a-4326-a141-556f43239520"
+	},
+	"type": "document",
+	"timestamp": "2022-12-01T15:04:48.865+08:00",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "30551ce1-5a28-4356-b684-1e639094ad4d",
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "http://ehealth.gov.hk/fhir",
+							"display": "Hong Kong eHR Healthcare Document"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/6e480262-978c-49f0-a793-468293932fc2"
+				},
+				"date": "2022-12-01T15:04:48.865+08:00",
+				"author": [
+					{
+						"reference": "Organization/author",
+						"display": "Medical THREE"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Hong Kong eHR Healthcare Document",
+						"code": {
+							"coding": [
+								{
+									"system": "http://ehealth.gov.hk/fhir/datadomain",
+									"code": "IMMU",
+									"display": "Immunization Records"
+								}
+							]
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-TransactonType",
+										"valueString": "I"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2021-01-03T15:04:48.865+08:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2021-01-03T15:04:48.865+08:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+										"valueString": "3"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-UploadMode",
+										"valueString": "BL"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+										"valueDateTime": "2021-01-03T15:04:48.865+08:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+										"valueString": "9938744791"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+										"valueString": "Medical THREE"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+										"valueDateTime": "2021-01-03T15:04:48.865+08:00"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIdentifier",
+										"valueString": "9938744791"
+									},
+									{
+										"url": "http://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+										"valueString": "Medical THREE"
+									}
+								],
+								"reference": "Immunization/534922e6-1e05-4b08-b0b3-068773c12658",
+								"identifier": {
+									"system": "http://ehealth.gov.hk/HCPID/Recordkey",
+									"value": "IMMU01"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:534922e6-1e05-4b08-b0b3-068773c12658",
+			"resource": {
+				"resourceType": "Immunization",
+				"id": "534922e6-1e05-4b08-b0b3-068773c12658",
+				"extension": [
+					{
+						"url": "http://ehealth.gov.hk/FHIR/1003430-ImmuRecordReportText"
+					},
+					{
+						"url": "http://ehealth.gov.hk/FHIR/1001818-ImmuRecordReport",
+						"valueReference": {
+							"reference": "DocumentReference/1832473e-2fe0-452d-abe9-3cdb9879522f"
+						}
+					}
+				],
+				"identifier": [
+					{
+						"system": "http://ehealth.gov.hk/HCP/recordnum",
+						"value": "R01"
+					}
+				],
+				"status": "completed",
+
+				"patient": {
+					"reference": "Patient/6e480262-978c-49f0-a793-468293932fc2"
+				},
+				"encounter": {
+					"reference": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2"
+				},
+				"occurrenceDateTime": "2021-01-03",
+				"location": {
+					"reference": "Location/c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+				},
+				"lotNumber": "AC37B358AC",
+				"site": {
+					"coding": [
+						{
+							"system": "http://ehealth.gov.hk/SiteOfAdmin"
+						}
+					]
+				},
+				"route": {
+					"coding": [
+						{
+							"system": "http://ehealth.gov.hk/RouteOfAdmin",
+							"code": "IM",
+							"display": "Intramuscular"
+						}
+					],
+					"text": "Intramuscular"
+				},
+				"performer": [
+					{
+						"actor": {
+							"reference": "Organization/72884cad-ebe6-4f43-a51a-2f978275f132"
+						}
+					}
+				],
+				"note": [
+					{"text": "Vaccination record"}
+				],
+				"protocolApplied": [
+					{
+						"doseNumberString": "Not Applicable"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "72884cad-ebe6-4f43-a51a-2f978275f132",
+				"identifier": [
+					{
+						"system": "http://ehealth.gov.hk/vaccineProvider",
+						"value": "VH"
+					}
+				],
+				"name": "VH clinic",
+				"alias": [
+					"VH clinic"
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+			"resource": {
+				"resourceType": "Location",
+				"id": "c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+				"name": "VH Clinic"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:1832473e-2fe0-452d-abe9-3cdb9879522f",
+			"resource": {
+				"resourceType": "DocumentReference",
+				"id": "1832473e-2fe0-452d-abe9-3cdb9879522f",
+				"status": "current",
+				"date": "2021-01-03T08:30:00+11:00",
+				"content": [
+					{
+						"attachment": {
+						    "contentType": "application/pdf",
+                            "url": "8088450656.BRANCHA.IMMU.IMMU001.123.pdf.201000000001.20090702084530",
+                            "title": "Immunisation record"	
+						}
+					}				
+                ]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+			"resource": {
+				"resourceType": "Encounter",
+				"id": "169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+				"extension": [
+					{
+						"url": "http://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+						"valueString": "9938744791"
+					}
+				],
+				"identifier": [
+					{
+						"system": "http://ehealth.gov.hk/HCP/EpisodeNum"
+					}
+				],
+				"status": "finished",
+				"class": {
+					"system": "http://ehealth.gov.hk/fhir/class",
+					"code": "UNKNOWN",
+					"display": "Unknown status"
+				}
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:6e480262-978c-49f0-a793-468293932fc2",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "6e480262-978c-49f0-a793-468293932fc2",
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://ehealth.gov.hk/fhir/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "944272043043"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "YD1298051"
+					}
+				],
+				"name": [
+					{
+						"text": "CHAN, TAI MAN",
+						"family": "CHAN",
+						"given": [
+							"TAI MAN"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "2000-08-04"
+			}
+		}
+	]
+}
