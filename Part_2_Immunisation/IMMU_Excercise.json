@@ -110,6 +110,14 @@
 				"resourceType": "Immunization",
 				"id": "534922e6-1e05-4b08-b0b3-068773c12658",
 				"extension": [
+					{ 
+                        "url": "http://ehealth.gov.hk/FHIR/1004028-Historicalimmunisation", 
+                        "valueString": "N" 
+                    },
+					{ 
+                        "url": "http://ehealth.gov.hk/FHIR/1003428-vaccineAdminRemark", 
+                        "valueString": "Anything"
+                    }, 
 					{
 						"url": "http://ehealth.gov.hk/FHIR/1003430-ImmuRecordReportText"
 					},
@@ -127,7 +135,20 @@
 					}
 				],
 				"status": "completed",
-
+				"vaccineCode": { 
+                    "coding": [ 
+                        { 
+                            "system": "http://ehealth.org.hk/RPP", 
+                            "code": "48297", 
+                            "display": "BOOSTRIX VACCINE" 
+                        }, 
+                        { 
+                            "system": "http://ehealth.gov.hk/HCP/vaccinelocal", 
+                            "code": "Unknown Local Code", 
+                            "display": "BOOSTRIX VACCINE" 
+                        } 
+                    ] 
+                },
 				"patient": {
 					"reference": "Patient/6e480262-978c-49f0-a793-468293932fc2"
 				},
